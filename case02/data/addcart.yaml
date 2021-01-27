@@ -1,0 +1,8 @@
+-
+  path: /api/addcart
+  headers:
+    token:
+  data:
+    openid:
+    userid:
+    productid: 8888

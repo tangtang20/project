@@ -1,0 +1,56 @@
+{
+  "uid" : "f9ebfedb34c9410c",
+  "name" : "test_login[admin-123456]",
+  "fullName" : "test_case01#test_login",
+  "historyId" : "98488fbff9231c2a4525934aa60bab97",
+  "time" : {
+    "start" : 1611403366375,
+    "stop" : 1611403366377,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_case01"
+  }, {
+    "name" : "host",
+    "value" : "AUTOBVT-V591F0I"
+  }, {
+    "name" : "thread",
+    "value" : "2232-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_case01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "password",
+    "value" : "'123456'"
+  }, {
+    "name" : "user",
+    "value" : "'admin'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f9ebfedb34c9410c.json",
+  "parameterValues" : [ "'123456'", "'admin'" ]
+}

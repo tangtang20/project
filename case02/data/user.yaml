@@ -1,0 +1,10 @@
+-
+  path: /api/login
+  data:
+    username: admin
+    password: '123456'
+-
+  path: /api/login
+  data:
+    username:
+    password: '123456'

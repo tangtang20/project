@@ -1,0 +1,78 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "AUTOBVT-V591F0I",
+    "children" : [ {
+      "name" : "2232-MainThread",
+      "children" : [ {
+        "name" : "test_login[admin1-]",
+        "uid" : "cb96b52c9708c292",
+        "parentUid" : "0d579374b7a4ee1cbb1d2e51c2d33efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611403366386,
+          "stop" : 1611403366387,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'admin1'" ]
+      }, {
+        "name" : "test_login02",
+        "uid" : "69f07064ac658977",
+        "parentUid" : "0d579374b7a4ee1cbb1d2e51c2d33efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611403367658,
+          "stop" : 1611403367659,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login1[data0]",
+        "uid" : "9c548c26409ceea7",
+        "parentUid" : "0d579374b7a4ee1cbb1d2e51c2d33efb",
+        "status" : "broken",
+        "time" : {
+          "start" : 1611403366397,
+          "stop" : 1611403366397,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'admin', 'password': '123456'}" ]
+      }, {
+        "name" : "test_login01[data0]",
+        "uid" : "8871b6e01303e3f2",
+        "parentUid" : "0d579374b7a4ee1cbb1d2e51c2d33efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611403367357,
+          "stop" : 1611403367520,
+          "duration" : 163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'admin', 'password': '123456'}" ]
+      }, {
+        "name" : "test_login[admin-123456]",
+        "uid" : "f9ebfedb34c9410c",
+        "parentUid" : "0d579374b7a4ee1cbb1d2e51c2d33efb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1611403366375,
+          "stop" : 1611403366377,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'123456'", "'admin'" ]
+      } ],
+      "uid" : "0d579374b7a4ee1cbb1d2e51c2d33efb"
+    } ],
+    "uid" : "f083555ba0efc5b1c6f49612acd612e6"
+  } ]
+}

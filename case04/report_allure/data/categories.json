@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "KeyError: 'user'",
+      "children" : [ {
+        "name" : "test_login1[data0]",
+        "uid" : "9c548c26409ceea7",
+        "parentUid" : "f1bf3da2fe21140a56821c8ffa50eabc",
+        "status" : "broken",
+        "time" : {
+          "start" : 1611403366397,
+          "stop" : 1611403366397,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'username': 'admin', 'password': '123456'}" ]
+      } ],
+      "uid" : "f1bf3da2fe21140a56821c8ffa50eabc"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

@@ -1,0 +1,4 @@
+[TEST_SERVER]
+url = http://39.98.138.157:5000
+[ONLINE_SERVER]
+url = http://www.baidu.com

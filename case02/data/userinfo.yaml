@@ -1,0 +1,4 @@
+-
+  path: /api/getuserinfo
+  headers:
+    token:

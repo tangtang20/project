@@ -1,0 +1,70 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_login[admin-123456]",
+    "uid" : "f9ebfedb34c9410c",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1611403366375,
+      "stop" : 1611403366377,
+      "duration" : 2
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "'123456'", "'admin'" ]
+  }, {
+    "name" : "test_login[admin1-]",
+    "uid" : "cb96b52c9708c292",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1611403366386,
+      "stop" : 1611403366387,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "''", "'admin1'" ]
+  }, {
+    "name" : "test_login1[data0]",
+    "uid" : "9c548c26409ceea7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1611403366397,
+      "stop" : 1611403366397,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'username': 'admin', 'password': '123456'}" ]
+  }, {
+    "name" : "test_login01[data0]",
+    "uid" : "8871b6e01303e3f2",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1611403367357,
+      "stop" : 1611403367520,
+      "duration" : 163
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'username': 'admin', 'password': '123456'}" ]
+  }, {
+    "name" : "test_login02",
+    "uid" : "69f07064ac658977",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1611403367658,
+      "stop" : 1611403367659,
+      "duration" : 1
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

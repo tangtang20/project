@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Jan 23 20:02:47 CST 2021","Sat Jan 23 20:02:47 CST 2021","163","","test_case02","","","","test_login01[data0]",""
+"broken","Sat Jan 23 20:02:46 CST 2021","Sat Jan 23 20:02:46 CST 2021","0","","test_case01","","","","test_login1[data0]",""
+"passed","Sat Jan 23 20:02:46 CST 2021","Sat Jan 23 20:02:46 CST 2021","1","","test_case01","","","","test_login[admin1-]",""
+"passed","Sat Jan 23 20:02:47 CST 2021","Sat Jan 23 20:02:47 CST 2021","1","","test_case02","","","","test_login02",""
+"passed","Sat Jan 23 20:02:46 CST 2021","Sat Jan 23 20:02:46 CST 2021","2","","test_case01","","","","test_login[admin-123456]",""
