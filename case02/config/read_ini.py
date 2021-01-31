@@ -1,5 +1,6 @@
 import configparser
 import os
+
 """
 首先我们不能使用相关路径或者绝对路径的方式，这种方式只对特定的路径有效，也就是你程序写死了。
 有效的解决思路是找到你文件的绝对路径，在代码中用全局变量记录下来，其他部分在此基础上进行本机或者上下级目录等操作。具体实现是：
@@ -28,7 +29,16 @@ cfg.read(os.path.join(BASE_DIR ,'config.ini'))
 def ReadIni(path,section,option):
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     conf=configparser.ConfigParser()
-    conf.read(os.path.join(BASE_DIR,path))
+    conf.read(os.path.join(BASE_DIR,path),encoding='utf-8')
     value=conf.get(section,option)
     return value
 
+#运行日志路径
+base_path=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+log_file=os.path.join(base_path,'log','run.log')
+#日志等级
+log_level=ReadIni('../config/config','log','log_level')
+#unittest
+unittest_path=ReadIni('config','unittest','unittest_path')
+#report
+report_path=ReadIni('config','report','report_path')

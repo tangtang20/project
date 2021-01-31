@@ -11,10 +11,24 @@ from case02.config import read_ini
 '''
 @ddt()
 class Test_Case(unittest.TestCase):
+    #关联赋值行为
+    def assignment(self,kwargs):
+        #dict.items() 方法把字典中每对 key 和 value 组成一个元组，并把这些元组放在列表中返回
+        for key,value in kwargs.items():
+            #基于数据的内容的格式来判断基于何种处理方式
+            if type(value) is dict:
+                self.assignment(value)
+            else:
+                if value:
+                    pass
+                else:
+                    kwargs[key]=getattr(self,key)
+        return kwargs
+
     @classmethod
     def setUpClass(cls):
         cls.ak=ApiKey()
-        cls.url=read_ini.ReadIni('../config/config','TEST_SERVER','url')
+        cls.url=read_ini.ReadIni('config','TEST_SERVER','url')
         cls.token=None
         cls.openid=None
         cls.userid=None
@@ -49,13 +63,15 @@ class Test_Case(unittest.TestCase):
         print(res.text)
     #createorder接口测试用例
     @file_data('../data/createorder.yaml')
-    def test_04(self,path,headers,data):
+    def test_04(self,path,**kwargs):
         url = self.url + path
-        headers['token'] = self.token
-        data['openid'] = self.openid
-        data['userid'] = self.userid
-        data['cartid']=self.cartid
-        res=self.ak.send_post(url=url,headers=headers,json=data)
+        # headers['token'] = self.token
+        # data['openid'] = self.openid
+        # data['userid'] = self.userid
+        # data['cartid']=self.cartid
+        value=self.assignment(kwargs)
+        print(value)
+        res=self.ak.send_post(url=url,headers=value['headers'],json=value['data'])
         print(res.text)
 if __name__=='__main__':
     unittest.main()

@@ -2,3 +2,17 @@
 url = http://39.98.138.157:5000
 [ONLINE_SERVER]
 url = http://www.baidu.com
+
+[log]
+#日志等级，0-info, 1-debug
+log_level = 1
+
+[report]
+report_path = ../report/
+
+[unittest]
+unittest_path = ../case
+
+[email]
+host =
+

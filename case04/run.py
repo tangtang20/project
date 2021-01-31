@@ -1,4 +1,4 @@
 import pytest
 
 if __name__=='__main__':
-    pytest.main(['-sv','./test_demo/test_case02.py','--alluredir','./result/'])
+    pytest.main(['-sv','./test_demo/test_case02.py','--alluredir','./allure-results'])

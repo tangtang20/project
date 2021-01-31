@@ -9,4 +9,6 @@ def load_yaml(path):
     data=yaml.load(file,Loader=yaml.FullLoader)
     return data
 
-#load_yaml('../data/user.yaml')
+
+if __name__=='__main__':
+    print(load_yaml('../data/user.yaml'))
