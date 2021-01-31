@@ -3,6 +3,7 @@ from datetime import date,datetime
 from HtmlTestRunner import HTMLTestRunner
 from case02.base.log import logger
 from case02.config.read_ini import unittest_path,report_path
+from case02.base.sendemail import sendemail
 class report:
     def toreport(self):
         logger().info('开始读取unittest测试核心目录')
@@ -34,6 +35,7 @@ class report:
             logger().error("执行用例失败，请查看报错原因：{0}".format(e))
 
         logger().info("执行测试用例结束。。。。。。。。。。。。。")
+        sendemail().send_mail(reportpath)
 
 if __name__=='__main__':
     report().toreport()

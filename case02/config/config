@@ -14,5 +14,13 @@ report_path = ../report/
 unittest_path = ../case
 
 [email]
-host =
-
+#邮件服务器地址
+host = smtp.sina.com
+#发件服务器端口
+port = 465
+#发件邮箱账号
+sender = aaron_liu813@sina.com
+#邮箱授权密码
+pwd = 1041556270bcff71
+#收件人
+receiver = 526378725@qq.com
