@@ -53,12 +53,14 @@ class Test_Case(unittest.TestCase):
         print(res.text)
     #addcart接口测试用例
     @file_data('../data/addcart.yaml')
-    def test_03(self,path,headers,data):
+    def test_03(self,path,**kwargs):
         url=self.url+path
-        headers['token']=self.token
-        data['openid']=self.openid
-        data['userid']=self.userid
-        res=self.ak.send_post(url=url,headers=headers,json=data)
+        # headers['token']=self.token
+        # data['openid']=self.openid
+        # data['userid']=self.userid
+        value = self.assignment(kwargs)
+        print(value)
+        res=self.ak.send_post(url=url,headers=value['headers'],json=value['data'])
         Test_Case.cartid=self.ak.get_text(res.text,'cartid')
         print(res.text)
     #createorder接口测试用例
