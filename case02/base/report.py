@@ -4,6 +4,9 @@ from HtmlTestRunner import HTMLTestRunner
 from case02.base.log import logger
 from case02.config.read_ini import unittest_path,report_path
 from case02.base.sendemail import sendemail
+from BeautifulReport import BeautifulReport
+
+
 class report:
     def toreport(self):
         logger().info('开始读取unittest测试核心目录')
@@ -20,16 +23,18 @@ class report:
         time=datetime.now()
         now=time.strftime('%Y-%m-%d %H_%M_%S')
         #报告绝对路径
-        reportname=os.path.join(base_path,report_path)+now
+        reportname=report_path+now
         reportpath=reportname+'result.html'
         #打开文件，写入测试结果
         logger().info('执行测试用例开始.......')
         try:
             #
-            f=open(reportpath,'a')
-            runner=HTMLTestRunner(stream=f,verbosity=2,report_title='接口用例测试报告')
-            runner.run(discover)
-            f.close()
+            # f=open(reportpath,'a')
+            # runner=HTMLTestRunner(stream=f,verbosity=2,report_title='接口用例测试报告')
+            # runner.run(discover)
+            # f.close()
+            result=BeautifulReport(discover)
+            result.report(description='用例执行详细信息',filename=reportname+'result')
             logger().info('写入报告成功')
         except Exception as e:
             logger().error("执行用例失败，请查看报错原因：{0}".format(e))
